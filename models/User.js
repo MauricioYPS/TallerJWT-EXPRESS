@@ -1,6 +1,6 @@
 import {Schema,model} from 'mongoose';
 
-let collecton = 'Usuario';
+let collection = 'Usuario';
 let schema = new Schema({
     Nombre:{type: String, required: true},
     Correo:{type: String, required: true},
@@ -12,5 +12,5 @@ let schema = new Schema({
     timestamps: true,
 })
 
-let Usuario = model(collecton,schema);
+let Usuario = model(collection,schema);
 export default Usuario;
